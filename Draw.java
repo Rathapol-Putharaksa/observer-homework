@@ -1,10 +1,4 @@
-/**
- *
- * @author 
- * 1. 6110613228 นายรัฐพล พุทธรักษา
- * 2. 6110613129 นายปุณณธัช บุณยรัตนสุนทร
- * 3. 6110613087 นายวรรษกร วัฒนเมธาวี
-**/
+
 
 import java.awt.Color;
 import javax.swing.JPanel;
@@ -29,7 +23,7 @@ public class Draw extends JPanel {
         MyShape circle = new Circle(100, 100, 70);
         MyShape circle2 = new Circle(300, 300, 100,Color.BLUE);
         MyShape rectangle = new Rectangle(600, 600, 80, 100, Color.PINK);
-        Observer l = new Observer();
+        Subject l = new Subject();
         l.addShape(circle);
         l.addShape(rectangle);
         l.addShape(circle2);
